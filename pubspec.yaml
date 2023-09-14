@@ -1,0 +1,29 @@
+name: flutter_keyboard_visibility_windows
+publish_to: none
+description: An implementation for the Windows platform of `flutter_keyboard_visibility'
+version: 1.0.0
+homepage: https://github.com/MisterJimson/flutter_keyboard_visibility
+repository: https://github.com/MisterJimson/flutter_keyboard_visibility
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+  flutter: '>=3.13.0'
+
+flutter:
+  plugin:
+    implements: flutter_keyboard_visibility
+    platforms:
+      windows:
+        dartPluginClass: FlutterKeyboardVisibilityPluginWindows
+
+dependencies:
+  flutter_keyboard_visibility_platform_interface:
+    git: https://github.com/kumsumit/flutter_keyboard_visibility_platform_interface.git
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_lints: 
+    git: https://github.com/kumsumit/flutter_lints.git
+  flutter_test:
+    sdk: flutter
